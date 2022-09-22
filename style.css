@@ -1,0 +1,154 @@
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+    --bg-buton-color-alt: #442e76;
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+ 
+  body {
+    background-color: var(--body-bg-color);
+    background-size: 45rem;
+  } 
+  
+  .logo {
+    margin-left: 1.875rem;
+    margin-top: 3.125rem;
+  }
+
+  .logo svg {
+    height: 5.875rem;
+    width: 24.3125rem;    
+  }
+
+  main {
+   margin-left: 2.25rem;
+  }
+  
+  .text {
+    width: 40.4375rem;
+  }
+  
+  h1 {
+    font: 700 1.5rem 'Work Sans', sans-serif;
+    color: var(--title-color);
+    margin-top: 5.75rem;
+  }
+
+  h2 {
+    font: 700 0.875rem 'League Spartan', sans-serif;
+    color: var(--text-color);
+  }
+
+  p {
+    font: 400 0.875rem 'League Spartan', sans-serif;
+    color: var(--text-color);
+  }
+
+  form {
+    display: flex;
+  }
+
+ h3 {
+    font: 700 0.875rem 'League Spartan', sans-serif;
+    color: var(--form-color);
+    margin-top: 3.125rem;  
+ }
+
+ input {
+    border: 0;
+    border-left: 0.3125rem solid var(--title-color);
+    height: 3rem;
+    width: 46.875rem;   
+    color: var(--form-color);        
+ }
+
+ button {
+    border: none;
+    width: 3.125rem;
+    height: 3.125rem;
+    padding: 0.75rem;
+    background-color: var(--bg-button-color);
+ }
+
+ form svg {
+    height: 1.5rem;
+    color: var(--text-color);    
+ }
+
+ .newsletter {    
+    margin-top: 3.125rem;
+    position: absolute;
+ }
+ 
+ .newsletter a {
+    color: var(--bg-button-color); 
+    font: 700 0.875rem 'League Spartan', sans-serif;       
+ }
+
+ i {
+    position: relative;
+    top: 0.45rem;
+    font-size: 1.5rem;
+    margin-left: 0.3125rem;
+ }
+ 
+ .main-picture img {
+    height: 49rem;    
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;    
+}
+
+/* RESPONSIVE */
+@media (max-width: 1280px) {
+  .text {
+    width: 80vw;
+  }
+  
+  .main-picture img {
+    position: absolute;
+    left: 0rem;
+    top: 25rem;
+    width: 100vw;
+    height: auto;
+  }
+
+  h3 {
+    color: var(--body-bg-color);    
+    margin-top: 17rem;
+  }
+
+  .newsletter a {
+    color: var(--bg-buton-color-alt);
+    background-color: #FFFFFF;
+    padding: 0.5rem;
+    border-left: 0.3125rem solid var(--title-color);    
+  }
+}
+
+@media (max-width: 512px) {
+  .logo {
+    margin-left: -2rem;
+    margin-top: 3.125rem;
+  }
+  
+  .logo svg {
+    height: 4rem;        
+  }
+
+  .main-picture img {
+    top: 27rem;
+  }
+
+  h3 {
+    margin-top: 10rem;
+  }
+}

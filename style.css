@@ -51,22 +51,23 @@
     color: var(--text-color);
   }
 
-  form {
-    display: flex;
-  }
-
- h3 {
+  h3 {
     font: 700 0.875rem 'League Spartan', sans-serif;
     color: var(--form-color);
     margin-top: 3.125rem;  
- }
+  }
+
+  form {
+    display: flex;   
+  }
 
  input {
     border: 0;
     border-left: 0.3125rem solid var(--title-color);
     height: 3rem;
     width: 46.875rem;   
-    color: var(--form-color);        
+    color: var(--form-color);      
+    box-shadow: 0.25rem 0.625rem 0.9375rem black;     
  }
 
  button {
@@ -75,6 +76,7 @@
     height: 3.125rem;
     padding: 0.75rem;
     background-color: var(--bg-button-color);
+    box-shadow: 0.25rem 0.625rem 0.9375rem black;
  }
 
  form svg {

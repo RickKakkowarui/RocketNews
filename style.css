@@ -58,7 +58,9 @@
   }
 
   form {
-    display: flex;   
+    display: flex;
+    box-shadow: 0.25rem 0.625rem 0.9375rem black;   
+    width: fit-content;
   }
 
  input {
@@ -66,8 +68,7 @@
     border-left: 0.3125rem solid var(--title-color);
     height: 3rem;
     width: 46.875rem;   
-    color: var(--form-color);      
-    box-shadow: 0.25rem 0.625rem 0.9375rem black;     
+    color: var(--form-color);    
  }
 
  button {
@@ -75,8 +76,7 @@
     width: 3.125rem;
     height: 3.125rem;
     padding: 0.75rem;
-    background-color: var(--bg-button-color);
-    box-shadow: 0.25rem 0.625rem 0.9375rem black;
+    background-color: var(--bg-button-color);   
  }
 
  form svg {
@@ -121,8 +121,8 @@
     top: 25rem;
     width: 100vw;
     height: auto;
-  }
-
+  }  
+  
   h3 {
     color: var(--body-bg-color);    
     margin-top: 17rem;
@@ -133,6 +133,12 @@
     background-color: #FFFFFF;
     padding: 0.5rem;
     border-left: 0.3125rem solid var(--title-color);    
+  }
+}
+
+@media (max-width: 890px) {
+  form {
+    width: 80vw;
   }
 }
 
